@@ -16,6 +16,7 @@
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-layers.min.js"></script>
 		<script src="js/init.js"></script>
+		<script type="text/javascript" src="http://latex.codecogs.com/latexit.js"></script>
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link href="../static/css/skel.css" th:href="@{/css/skel.css}" rel="stylesheet" />
@@ -79,7 +80,14 @@
 
 							<!-- Feature -->
 								<section>
-									<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+									<a href="#" class="image featured"><div lang="latex">$$
+										F(x,y)=0 ~~\mbox{and}~~
+										\left| \begin{array}{ccc}
+										F''_{xx} & F''_{xy} &  F'_x \\
+										F''_{yx} & F''_{yy} &  F'_y \\
+										F'_x     & F'_y     & 0
+										\end{array}\right| = 0
+										$$</div></a>
 									<header>
 										<h3>Okay, so what is this?</h3>
 									</header>
@@ -93,7 +101,10 @@
 
 							<!-- Feature -->
 								<section>
-									<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="#" class="image featured"><div lang="latex">\frac{1}{\displaystyle 1+
+										\frac{1}{\displaystyle 2+
+										\frac{1}{\displaystyle 3+x}}} +
+										\frac{1}{1+\frac{1}{2+\frac{1}{3+x}}}</div></a>
 									<header>
 										<h3>Nice! What is HTML5 UP?</h3>
 									</header>
@@ -107,7 +118,9 @@
 
 							<!-- Feature -->
 								<section>
-									<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+									<a href="#" class="image featured"><div lang="latex">$$
+										{n+1\choose k} = {n\choose k} + {n \choose k-1}
+										$$</div> </a>
 									<header>
 										<h3>Skel? What's that?</h3>
 									</header>
