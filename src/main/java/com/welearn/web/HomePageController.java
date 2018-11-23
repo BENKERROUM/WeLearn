@@ -6,13 +6,13 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class SimpleController {
+public class HomePageController {
     @Value("${spring.application.name}")
     String appName;
 
-    @GetMapping("/")
+    @GetMapping(value={"", "/", "index.html"})
     public String homePage(Model model) {
         model.addAttribute("appName", appName);
-        return "home";
+        return "temp/index";
     }
 }
