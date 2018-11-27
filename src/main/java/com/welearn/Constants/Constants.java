@@ -15,6 +15,10 @@ public class Constants {
 
     public static void initData(){
 
+        insertFakeData(13);
+    }
+
+    private static void insertFakeData(int nmbr){
         Level TRONCCOMUN_Level = new Level(0,"TRONC_COMMUN");
 
         Exercise exercise1 = new Exercise(0," When \\(a \\ne 0\\), there are two solutions to \\(ax^2 + bx + c = 0\\) and they are\n" +
@@ -31,9 +35,10 @@ public class Constants {
         }}, TRONCCOMUN_Level);
 
         exercises = new ArrayList<>();
-        exercises.add(series1);
-        exercises.add(series2);
-
+        for(int i =0;i< nmbr;i++)
+            exercises.add(series1);
+        //exercises.add(series1);
+        //exercises.add(series2);
     }
 
 }

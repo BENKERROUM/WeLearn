@@ -6,8 +6,10 @@ public class Series {
 
     private int id;
     private String title;
+    private String description;
     private List<Exercise> exercises;
     private Level level;
+    private boolean visible;
 
 
     public Series(int id, String title, List<Exercise> exercises, Level level) {
